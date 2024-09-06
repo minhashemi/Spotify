@@ -2,6 +2,9 @@
 
 This web-based music player dynamically displays the **currently playing song or episode** from your Spotify account. It fetches real-time data from [Spotify's API](https://developer.spotify.com/documentation/web-api/reference/get-the-users-currently-playing-track?additional_types=episode) and shows details like the song title, artist, and album art.
 
+   ![cover](https://raw.githubusercontent.com/minhashemi/Spotify/main/img/cover.jpg)
+
+
 ## Why Middleware is Essential 🔒
 
 You might wonder, "Do we need middleware to display Spotify’s currently playing track?" The short answer: **Yes!** 
