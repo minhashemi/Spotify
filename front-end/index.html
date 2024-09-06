@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Iconify library -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="one">
+            <div class="music">
+                <img id="player-album-art" style="max-width: 100%; border-radius: 10px;" />
+            </div>
+            <div class="info">
+                <div class="scrolling-text">
+                    <span id="player-song" class="name">Song Title</span>
+                </div>
+                <div id="player-artist" class="name1">Artist Name</div>
+                <div class="bar">
+                    <div id="player-progress-back">
+                        <div id="player-progress" style="height: 5px; background-color: #52504f; border-radius: 5px; width: 0;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="two"></div> <!-- Green ball -->
+        <div class="three"></div> <!-- Purple ball -->
+        <div class="copyright">
+            <a href="https://github.com/minhashemi" target="_blank">Developed with 🎧 by Amin</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

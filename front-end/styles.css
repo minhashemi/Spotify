@@ -1,0 +1,228 @@
+:root {
+  /* Define reduced custom shadows */
+  --shadow-1: -2px 4px 12px hsla(0, 0%, 0%, 0.15); /* Reduced shadow size */
+  --shadow-2: 0 8px 15px hsla(0, 0%, 0%, 0.15);   /* Softer shadow */
+  --shadow-3: 0 8px 20px hsla(0, 0%, 0%, 0.15);
+  --shadow-4: 0 12px 25px hsla(0, 0%, 0%, 0.1);
+  --shadow-5: 0 12px 40px hsla(0, 0%, 0%, 0.15);
+}
+
+/* Main card styling with reduced shadow */
+.card {
+  width: 250px;
+  height: 90px;
+  background: lightgrey;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  box-shadow: var(--shadow-2); /* Apply reduced shadow */
+  overflow: hidden; /* Ensure balls stay within card boundaries */
+}
+
+/* Differentiate podcast styles if needed */
+.card .podcast-info {
+  color: rgba(50, 50, 255, 0.8); /* Blue tone for podcasts */
+}
+
+/* Reduced shadow inside the card */
+.card .one {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  position: relative;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: var(--shadow-1); /* Softer shadow inside */
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Green and Purple Moving Balls */
+.card .two {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(131, 25, 163);
+  filter: drop-shadow(0 0 10px rgb(131, 25, 163));
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%; /* Position from the bottom of the card */
+  left: 10%;   /* Position from the left of the card */
+  z-index: 1;
+  animation: one 5s infinite;
+}
+
+.card .three {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(29, 209, 149);
+  filter: drop-shadow(0 0 10px rgb(29, 209, 149));
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%; /* Position from the bottom of the card */
+  right: 10%;  /* Position from the right of the card */
+  z-index: 1;
+  animation: two 5s infinite;
+}
+
+@keyframes one {
+  0% {
+    bottom: 10%;
+    left: 10%;
+  }
+  20% {
+    bottom: 20%;
+    left: 30%;
+  }
+  40% {
+    bottom: 50%;
+    left: 60%;
+  }
+  50% {
+    bottom: 30%;
+    left: 30%;
+  }
+  60% {
+    bottom: 15%;
+    left: 70%;
+  }
+  80% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 10%;
+    left: 10%;
+  }
+}
+
+@keyframes two {
+  0% {
+    bottom: 10%;
+    right: 10%;
+  }
+  20% {
+    bottom: 50%;
+    right: 30%;
+  }
+  40% {
+    bottom: 60%;
+    right: 40%;
+  }
+  50% {
+    bottom: 80%;
+    right: 30%;
+  }
+  60% {
+    bottom: 35%;
+    right: 20%;
+  }
+  80% {
+    bottom: 70%;
+    right: 15%;
+  }
+  100% {
+    bottom: 10%;
+    right: 10%;
+  }
+}
+
+/* Rest of the player styles */
+.card .one .music {
+  width: 60px;
+  height: 60px;
+  background: rgba(216, 212, 212, 0.726);
+  margin: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .one .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 120px);
+}
+
+.card .one .name {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: rgba(50, 49, 51, 0.637);
+}
+
+.card .one .name1 {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: rgba(50, 49, 51, 0.637);
+}
+
+/* Removed playlist-button CSS */
+
+/* Progress bar */
+.card .one .bar {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.card .scrolling-text {
+  width: 100%; 
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card .scrolling-text span {
+  display: inline-block;
+  padding-left: 100%; 
+  animation: scroll 10s linear infinite; /* Adjust timing to match desired speed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+/* Copyright Notice */
+.card .copyright {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background: rgba(50, 50, 50, 0.3); /* Slightly transparent dark background */
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  z-index: 15; /* Higher z-index to ensure it stays on top */
+}
+
+.card .copyright a {
+  color: white;
+  text-decoration: none;
+}
+
+.card .copyright a:hover {
+  text-decoration: underline;
+}
