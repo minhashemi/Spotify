@@ -30,11 +30,12 @@ Set up middleware to handle API requests. Instead of calling Spotify’s API dir
 
 Here’s what I’m planning to add or improve in future versions of this project:
 
-- [ ] ▶️ **Add listen on platform button**: Add a button to redirect the user to the current playing item for direct listening.
-- [ ] 🎨 **Enhanced UI**: Improve the design with more appealing CSS animations and transitions.
-- [ ] 📱 **Mobile Optimization**: Ensure the player is fully responsive and optimized for mobile devices.
-- [ ] 🎵 **Song History**: Keep a log of recently played tracks or episodes.
-- [ ] 🔄 **Auto-Refresh**: Add auto-refresh functionality to update the track every few seconds without a manual refresh.
+- [ ] Add a button to redirect the user to the current playing item for direct listening.
+- [ ] Improve the design with more appealing CSS animations and transitions.
+- [ ] Ensure the player is fully responsive and optimized for mobile devices.
+- [ ] Keep a log of recently played tracks or episodes.
+- [ ] Add auto-refresh functionality to update the track every few seconds without a manual refresh.
+- [ ] Track name must only scroll when it's longer than card width
 
 ---
 
