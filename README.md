@@ -22,8 +22,6 @@ Set up middleware to handle API requests. Instead of calling Spotify’s API dir
 - **JavaScript**: Handles dynamic updates, fetching data, and interacting with the backend.
 - **Cloudflare Workers**: A serverless backend for securely handling API requests, including the Spotify API calls.
 - **Spotify Web API**: Used to retrieve real-time information about the currently playing track or episode.
-- **GitHub**: For version control and collaboration (if you’re using GitHub to manage your project).
-  
 ---
 
 ## 📝 To-Do List: Future Updates
