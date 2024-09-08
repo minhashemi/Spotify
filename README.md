@@ -1,6 +1,6 @@
 # 🎧 Spotify Beats: Live Now
 
-This web-based music player dynamically displays the **currently playing song or episode** from your Spotify account. It fetches real-time data from [Spotify's API](https://developer.spotify.com/documentation/web-api/reference/get-the-users-currently-playing-track?additional_types=episode) and shows details like the song title, artist, and album art.
+This web-based music player dynamically displays the **currently playing song or episode** from your Spotify account. It fetches real-time data from [Spotify's API](https://developer.spotify.com/documentation/web-api/reference/get-the-users-currently-playing-track?additional_types=episode) and shows details like the song title, artist, and album art. Front-end of this project is also available at [CodePen](https://codepen.io/minhashemi/pen/BagMjJz).
 
    ![cover](https://raw.githubusercontent.com/minhashemi/Spotify/main/img/cover.jpg)
 
